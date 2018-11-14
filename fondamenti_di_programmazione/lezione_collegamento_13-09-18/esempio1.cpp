@@ -10,17 +10,23 @@ struct PolReg{			// 16 byte
 	double lungLato;	// 8 byte
 };
 
+struct p2{
+	int a,b,c;
+};
+
 typedef PolReg* p_PolReg;
 typedef bitset<32> byte;
 
 template <typename T>
 void print_byte (T bin) { 
 	unsigned int size = sizeof(T);
-	char* bytes = &bin;
-	for(int i = 0; i < size; i++)
-		cout << std::hex << (unsigned int)bytes[i] << std::dec;
+	char* bytes = (char*)bin;
+	cout << "PRINTING BYTES, size is:" << size << " The word is: " << bin << endl << "["; 
+	for(unsigned int i = 0; i < size-1; i++)
+		cout << "0x" << bytes[i]+0 << ",";
+	cout << "0x" << bytes[size-1]+0 << "]" << endl;
 }
-
+#if 0
 int main()
 {
 	PolReg* p = new PolReg;
@@ -32,7 +38,7 @@ int main()
 	cin >> p->lungLato;
 	cout << "Inserisci nLati [int]\n";
 	cin >> p->nLati;
-	print_bit("CIAO\n");
+	print_byte("CIAO");
 	//p->lungLato = ~0;
 	//p->nLati = ~0;
 	cout << "p->nLati(int) = " << p->nLati << " - Notazione a BIT<32> - " << (bitset<32>) p->nLati << endl;	
@@ -45,4 +51,11 @@ int main()
 		 <<" - "<<(byte) pi[1]<<" - "<<(byte) pi[2] << endl;
 	return 0;
 }
-
+#else
+int main(){
+	cout << "sizeof char is:";
+	print_byte("AAA");
+	
+	return 0;
+}
+#endif
