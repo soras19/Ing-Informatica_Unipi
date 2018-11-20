@@ -29,7 +29,7 @@ char pop(Nodo** root)
     Nodo* temp = *root; 
     *root = (*root)->next; 
     char popped = temp->data; 
-    free(temp); 
+    delete temp; 
   
     return popped; 
 }
