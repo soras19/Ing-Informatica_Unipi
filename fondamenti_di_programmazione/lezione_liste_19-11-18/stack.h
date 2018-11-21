@@ -1,22 +1,38 @@
 #ifndef STACK_H
 #define STACK_H
 
-template <class T>
-struct elemento{
-    T var;
-    elemento* next;
-};
+#include <iostream>
 
+template <class T>
+struct Nodo 
+{ 
+    T data; 
+    Nodo* next; 
+}; 
+  
 template <class T> class Stack{
     
     public:
         int isEmpty();
         int isFull();
         T pop();
-        int push(T obj);
+        void push(T data);
+        int get_size(){
+            return size;
+        }
+        void print(){
+            std::cout << "<";
+            while(root->next){
+                std::cout << pop() << ", ";
+            }
+            std::cout << pop() << ">\n";
+        }
         Stack();
     private:
-         
+        int size;
+        Nodo<T>* root;
+    protected:
+
 
         
 };
