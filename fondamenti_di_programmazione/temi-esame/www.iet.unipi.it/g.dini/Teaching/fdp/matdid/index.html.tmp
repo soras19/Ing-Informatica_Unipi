@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Fondamenti di Programmazione | Materiale Didattico</title>
+
+
+<style type="text/css">
+body {
+  font-family: Verdana;
+  line-height: 1.4em;
+  font-weight: normal;
+  font-style: normal;
+  font-size: medium;
+}
+
+</style></head>
+<body>
+<div align="center">
+<h3 style="font-style: italic;">Laurea in Ingegneria
+Informatica</h3>
+<h2>Fondamenti di Programmazione</h2>
+<h1>Materiale Didattico
+</h1>
+</div>
+<div>
+
+<p>
+<a href="matdid/00-introduzione.pdf" title="Introduzione al corso"><br></a>
+</p>
+<h2>Bibliografia</h2>
+<ul>
+<li><span style="color: rgb(51, 102, 255);"><span style="color: black;"> P. Corsini, G. Frosini.</span> </span><span style="color: rgb(51, 102, 255);">Note su organizzazione di
+un calcolatore e rappresentazione dell'informazione</span><span style="color: rgb(51, 102, 255);">. <span style="color: black;">Edizioni ETS. Piazza Carrara 16-19,
+Pisa.</span></span> (Capitolo 1: sezione 1; Capitolo 2:
+sezioni&nbsp;1,&nbsp;2,&nbsp;3 e 4.2; Capitolo&nbsp;5:
+sezione 5e 5.1)&nbsp;</li>
+<li>Lanfranco Lopriore.
+<span style="color: rgb(51, 102, 255);">C++:
+PROGRAMMAZIONE MEDIANTE ESEMPI
+Raccolta di diapositive</span>, Copisteria Il Campano, via
+Cavalca 67, tel. 050 58072&nbsp;</li>
+<li>Andrea Domenici, Graziano Frosini.<span style="color: rgb(51, 102, 255);">
+Introduzione alla Programmazione ed
+Elementi di Strutture Dati con il Linguaggio C++</span>.&nbsp;Franco
+Angeli, Milano (5Â° edizione o successive)
+</li>
+</ul>
+<h2>Materiale didattico aggiuntico</h2><ul><li><a href="00-Introduzione.pdf" title="Introduzione al corso">Introduzione al corso</a></li></ul>
+<h3>Rappresentazione dell'informazione</h3><ul><li><a href="01-Algoritmo%20e%20calcolatore.pdf">Dall'algoritmo al calcolatore: brevi note</a></li><li><a href="02-Rappresentazione%20dell%27informazione.pdf">Rappresentazione binaria</a></li></ul><h3>Il Linguaggio C++</h3>
+<p>
+<a href="prec_e_ass_oper.pdf" title="C++: precedenza ed associativitÃ&nbsp; degli operatori">C++:
+precedenza ed associativitÃ&nbsp; degli operatori</a>
+</p>
+<p><a href="code_e_pile.pdf" title="Coda e pila: implementazione mediante array">Coda e
+pila: implementazione mediante array</a>
+</p>
+<p><a href="modulo_pila.pdf" title="Moduli: esemplificazione con la pila">Esempio di
+modulo: la pila</a>
+</p>
+<h3> Esercitazioni</h3>
+<ul>
+<li> Prova pratica del 31 Gennaio 2017: <a href="esercitazioni/2017-01-31/2017_app2_pp.pdf">testo</a>,
+<a href="esercitazioni/2017-01-31/main.cpp">main.cpp</a>,
+<a href="esercitazioni/2017-01-31/compito.h"><span style="text-decoration: underline;">compito.h</span></a>,
+<a href="esercitazioni/2017-01-31/compito.cpp">compito.cpp</a>.</li>
+<li>Prova pratica del 26 Settembre 2017: <a href="esercitazioni/2017-09-26/2017_app7_pp.pdf">testo</a>,
+<a href="esercitazioni/2017-09-26/main.cpp">main.cpp</a>,
+<a href="esercitazioni/2017-09-26/compito.h">compito.h</a>,
+<a href="esercitazioni/2017-09-26/compito.cpp">compito.cpp</a></li>
+<li>Prova pratica del 01 Giugno 2017: <a href="esercitazioni/2017-06-01/2017_app4_pp.pdf">testo</a>,
+<a href="esercitazioni/2017-06-01/main.cpp">main.cpp</a>,
+<a href="esercitazioni/2017-06-01/compito.h">compito.h</a>,
+<a href="esercitazioni/2017-06-01/compito.cpp">compito.cpp</a></li>
+<li>Prova pratica del 03 Febbraio 2014: <a href="esercitazioni/2014-02-03/03-02-2014-testo-pp.pdf">testo</a>,
+<a href="esercitazioni/2014-02-03/main.cpp">main.cpp</a>,
+<a href="esercitazioni/2014-02-03/compito.h">compito.h</a>,
+<a href="esercitazioni/2014-02-03/compito.cpp">compito.cpp</a></li>
+</ul>
+
+</div>
+</body></html>

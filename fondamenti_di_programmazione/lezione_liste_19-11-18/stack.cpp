@@ -38,6 +38,26 @@ template <class T> void Stack<T>::push(T data){
     size++;    
 }
 
+template <class T> void Stack<T>::push_back(T data){
+	Nodo<T>* stackNode = root;
+	while(stackNode -> next){
+		stackNode = stackNode -> next;
+	}
+	stackNode -> next = new Nodo<T>;
+	stackNode -> next -> data = data;
+	stackNode -> next -> next = NULL;
+}
+
+template <class T> void Stack<T>::stampa(){
+	Nodo<T>* stackNode = root;
+	while((stackNode -> next)){
+		std::cout << stackNode -> data;
+		stackNode = stackNode -> next;
+	}
+	std::cout << stackNode -> data << std::endl;
+	
+}
+
 // Tipi che possono essere utilizzati
 template class Stack<char>;
 template class Stack<int>;

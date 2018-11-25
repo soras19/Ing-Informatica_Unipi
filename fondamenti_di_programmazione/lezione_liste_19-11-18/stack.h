@@ -17,6 +17,8 @@ template <class T> class Stack{
         int isFull();
         T pop();
         void push(T data);
+        void push_back(T data);     	
+      	void stampa();
         int get_size(){
             return size;
         }
