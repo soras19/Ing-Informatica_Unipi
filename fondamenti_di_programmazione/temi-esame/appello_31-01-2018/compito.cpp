@@ -1,5 +1,5 @@
 // compito.cpp
-#include "compito.h"
+#include "compito.hpp"
 
 AlberoDiNatale::AlberoDiNatale(int n)
 {

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "compito.h"
+#include "mycompito.hpp"
 
 using namespace std;
 
@@ -15,6 +15,7 @@ int main()
     a.aggiungiPallina('R', 3, 0);
     a.aggiungiPallina('B', 0, 1);
     a.aggiungiPallina('V', 0, 2);
+    cout << "DOVREBBERO  FALLIRE DA QUA IN POI\n";
     a.aggiungiPallina('V', 1, 1);   // fallisce
     a.aggiungiPallina('V', 1, 2);   // fallisce
     a.aggiungiPallina('G', 0, 0);   // fallisce
@@ -23,7 +24,7 @@ int main()
     a.aggiungiPallina('B', -1, 2);  // fallisce
     a.aggiungiPallina('B', 2, -2);  // fallisce
     cout << a << endl;
-
+/*
      // --- SECONDA PARTE --- //
      cout << "--- SECONDA PARTE ---" << endl;
      cout << "Test operator+=: " << endl;
@@ -43,6 +44,6 @@ int main()
          a1.aggiungiPallina('R', 0, 1);
      }
      cout << "(a1 e' stato distrutto)" << endl;
-
+*/
     return 0;
 }
