@@ -21,4 +21,4 @@ public:
     ~Aula();
 };
 
-#endif //COMPITO_H_INCLUDED
+#endif //COMPITO_H_INCLUDE

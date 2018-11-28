@@ -1,6 +1,7 @@
 #include "compito.h"
 #include <cstring>
 
+// Dimensione della stringa che contiene l'id
 const int dim_id = 21;
 
 ostream& operator<<(ostream& os, const Aula& a){
@@ -14,16 +15,17 @@ ostream& operator<<(ostream& os, const Aula& a){
 }
 
 Aula& Aula::operator!(){
-    // Se non è piena non faccio nulla
+    // Se l'aula non è piena non faccio nulla
     for(int i = 0; i < N; i++)
         if(postazione[i][0] == '\0')
             return (*this);
+    // Ordinamento
     for(int i = 0; i < N; i++){
         for(int j=N-1; j > i; j--){
             if(strcmp(postazione[j], postazione[i]) < 0){ // 'ciao','mondo' = -1
-                char *aux = postazione[i];
+                char *tmp = postazione[i];
                 postazione[i] = postazione[j];
-                postazione[j] = aux;
+                postazione[j] = tmp;
             }
         }
     }
@@ -36,6 +38,7 @@ Aula::~Aula(){
     delete[] postazione;
 }
 
+// Costruttore di copia
 Aula::Aula(const Aula& a){
     N = a.N;
     postazione = new char*[N];
@@ -61,19 +64,18 @@ Aula::Aula(int n){
 
 bool Aula::aggiungi(const char* id){
     int id_size = strlen(id);
-    //if(postazione[0][0] != '\0')
-    // Controllo se id già è in qualche postazione
-    /*for(int i = 0; i < N; i++)
-        if(strcmp(id, postazione[i]) == 0)
-            return false;*/
-    for(int i = 0; i < N; i++){
+    // Controllo se l'id è già in una postazione
+    for(int i = 0; i < N; i++)
         if(strcmp(id, postazione[i]) == 0)
             return false;
+    // Se non c'è allora vado lo aggiungo alla prima postazione disponibile
+    for(int i = 0; i < N; i++){
         if(postazione[i][0] == '\0'){
             strcpy(postazione[i], id);
             return true;
         }
     }
+    // Se nessuna postazione era disponibile ritorno false
     return false;
 }
 
