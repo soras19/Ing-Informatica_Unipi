@@ -1,18 +1,28 @@
 #include <iostream>
-#include "compito.h"
+#include "mycompito.h"
 using namespace std;
+
+void bastardaeeva(int* bilanciere){
+    cerr << "\nCalling BASTARDAEVA:\n";
+    for(int i = 0; i<4; i++){
+        cerr << "DEBUG--------- i= " << i << " ,bilanciere[i]= ";
+        cerr << bilanciere[i] << " ------------\n";
+    }
+    cerr << "\nEND\n";
+}
 
 int main()
 {
     // --- PRIMA PARTE --- //
     cout << "--- PRIMA PARTE ---" << endl;
-    
+
     cout << "Test del costruttore:" << endl;
     Rastrelliera r;
     cout << r;
 
     cout << "Test di carica e di calcolaPeso:" << endl;
     int* b1 = r.carica(4, 4, 3, 0);
+    //bastardaeeva(b1);
     if (b1 != NULL)
         cout << "il peso del bilanciere b1 e': " << Rastrelliera::calcolaPeso(b1) << endl;
     else
@@ -30,9 +40,9 @@ int main()
 	cout << "Test di scarica:" << endl;
 	r.scarica(b1);
 	cout << r;
-
+    return 0;
     // --- SECONDA PARTE --- //
-    cout << "\n--- SECONDA PARTE ---\n";
+    /*cout << "\n--- SECONDA PARTE ---\n";
 
     cout << "Test di unisci:" << endl;
 	int* b3 = r.carica(3, 3, 1, 0);
@@ -47,5 +57,5 @@ int main()
     cout << "Test dell'op. di assegnamento:" << endl;
     Rastrelliera r2;
     r2 = r;
-    cout << r2;
+    cout << r2;*/
 }

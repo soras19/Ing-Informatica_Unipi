@@ -1,0 +1,38 @@
+#ifndef COMPITO_H
+#define COMPITO_h
+
+#include <iostream>
+
+using namespace std;
+
+enum Importanza{ bianco=0, verde, giallo, rosso};
+
+struct Paziente{
+	char[21] nome;
+	Importanza importanza;
+	nodo* next;
+};
+
+class ProntoSoccorso{
+	public:	
+		ProntoSoccorso();
+		// Ricovera il paziente di nome [nome] con importanza [liv]
+		void ricovero(const char*& nome, const Importanza& liv);
+		// Ritorna 0 se non ci sono pazienti in attesa, altrimenti 1
+		int prossimo(char*& nome);
+		// Overload operatore cout
+		friend ostream& operator<<(ostream& stream, const ProntoSoccorso& p);
+	private:
+		// Puntatore al primo elemento
+		Paziente* root;
+		unsigned int numero_pazienti;		
+		/* 
+		* Elimina il paziente [a] dalla lista e a precedente->next
+		* gli associa a->next, se precedente è NULL a root viene associato
+		* a->next
+		*/
+		void elimina(Paziente*& precedente, Paziente*& a);
+		
+};
+
+#endif

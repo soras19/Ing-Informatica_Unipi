@@ -1,5 +1,5 @@
 #include <iostream>
-#include "compito.h"
+#include "mycompito.h"
 using namespace std;
 
 int main()
@@ -24,11 +24,12 @@ int main()
     d.writeT("Sicilia");
     cout << d << endl;
 
-    cout << "Test del costruttore di copia:" << endl;
-    Display d1(d);
-    cout << d1 << endl;
+    //cout << "Test del costruttore di copia:" << endl;
+    //Display d1(d);
+    //cout << d1 << endl;
     
     // --- SECONDA PARTE --- //
+    /*
     cout << "--- SECONDA PARTE ---" << endl;
 
     cout << "Test di writeW:" << endl;
@@ -45,6 +46,6 @@ int main()
         cout << "Test del distruttore:" << endl;
     }
     cout << "(d2 e' stato distrutto)" << endl << endl;
-        
+     */
     return 0;
 }
