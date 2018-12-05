@@ -36,6 +36,7 @@ void clean(int*& a){
 
 bool check_n_occurrance(const char* str, int n){
     //cout << "str is " << str << " n is " << n << endl;
+    // Schifio
     int count = 0;
     for(int i = 0; i < strlen(str); i++){
         count = 0;
