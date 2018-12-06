@@ -22,7 +22,7 @@ int main()
    cout << "test dell'operatore -= per rilascio mano\n";
    p -= 'd';
    cout << p << endl << endl;
-
+/*
    cout << "---SECONDA PARTE---\n\n";
    cout << "test dell'operatore -= per rilascio dito\n";
    p -= 2;
@@ -48,6 +48,6 @@ int main()
        cout << p2 << endl;
    }
    cout << "distruttore invocato\n";
-   
+   */
    return 0;
 }
