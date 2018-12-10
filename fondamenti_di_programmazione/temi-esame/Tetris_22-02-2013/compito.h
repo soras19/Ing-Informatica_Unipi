@@ -1,35 +1,39 @@
 #ifndef COMPITO_H
 #define COMPITO_H
 
-#include <iostream>
-
-enum directions{RIGHT=0, LEFT, DOWN, SPACE};
+#include <iostream>;
 
 using namespace std;
 
+enum directions{RIGHT=0, LEFT, DOWN, SPACE};
+enum block_type{I, O};
+
+struct blocco{
+	block_type t;
+	int x,y;	
+}
+
 class Tetris{
-	int r,c;
+	static int r,c;
 	// Matrice che rappresenta il campo di tetris 
-	char** field;
+	static char** field; 
 	// array per i movimenti in 
-	bool queue[3];
+	static bool queue[3];
 	// coordinate forma attuale
-	int x, y;
+	static int x, y;
 	// 
-	void rotate();
+	static void rotate();
 	// In base all'input dell'utente modifica il campo di tetris
-	void move(directions d);
+	static void move(directions d);
 	// Funzioni per la gestione del movimento
-	void switch_on(directions d);
-	void switch_off(directions d);	
+	static void switch_on(directions d);
+	static bool inserisci();
 	
 public:
 	Tetris(int r_ = 10, int c_ = 10);
-	bool inserisci(int j);
-	void display();
-	void input();
-	int vuote();
-	void run();
+	// Funzione per inserire  una forma casuale
+	static void display();
+	static void input();
 		
 };
 
