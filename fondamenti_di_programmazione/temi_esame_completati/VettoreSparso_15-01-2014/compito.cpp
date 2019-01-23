@@ -37,6 +37,7 @@ VettoreSparso& VettoreSparso::operator *= (int k)
 			q = q->pun;
 		}
 	}
+	return *this;
 }
 
 VettoreSparso::VettoreSparso(int d)
