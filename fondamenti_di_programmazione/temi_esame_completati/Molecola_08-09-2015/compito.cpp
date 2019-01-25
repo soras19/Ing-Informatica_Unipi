@@ -15,7 +15,7 @@ ostream& operator << (ostream& os, const Molecola& m)
         os << q->s << q->n << '-';
         q = q->pun;
     }
-    os << q->s << q->n << ">";
+    os << q->s << q->n << ">" << endl;
     return os;
 }
 
